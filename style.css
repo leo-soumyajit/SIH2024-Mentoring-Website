@@ -45,6 +45,7 @@ html, body {
 }
 
 .navbar-menu li {
+    font-weight:600;
     display: inline;
 }
 
@@ -78,7 +79,7 @@ html, body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(to right, #f6e649, #ffffff);
+    background: linear-gradient(90deg, #f6e649 0%, #ffffff 50%, #dce311 100%);
     
     min-height: 50vh; /* Take up at least half of the viewport height */
     margin: 0 auto; 
@@ -125,14 +126,14 @@ html, body {
 }
 
 .hero-image img {
-    width: 100%;
+    width: 90%;
     height: auto;
-    margin-left: 10px;
+    margin-left: px;
     border-radius: 5px;
 }
 
 .service {
-    background-color: #1b1919;
+    background: linear-gradient(90deg, #f6e649 0%, #ffffff 50%, #dce311 100%);
     display: flex;
     flex-direction: column; /* Stack the services vertically */
     align-items: center;
@@ -187,7 +188,7 @@ p {
 }
 .service-box:hover{
     transform: translateY(1.1px);
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 16px rgba(28, 27, 27, 0.847);
     background-color: #fafafa;
 }
 .other-services{
@@ -335,7 +336,7 @@ p {
     background-color: #fff;
     margin-right: 10px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.788);
+    box-shadow: 0 2px 5px rgba(26, 26, 26, 0.788);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -357,11 +358,15 @@ p {
 }
 
 .carousel-item p {
+    font-weight: 600;
     font-size: 14px;
     color: #777;
     line-height: 1.5;
 }
-
+.carousel-item:hover {
+    transform: translateY(-3px); /* Moves the item up slightly */
+    box-shadow: 0 4px 15px rgba(16, 16, 16, 0.846); /* Makes the shadow larger on hover */
+}
 .carousel-nav {
     margin-top: 10px;
 }
@@ -400,7 +405,7 @@ p {
     align-items: center;
     height: 100px;
     width: 100%;
-    background: linear-gradient(to right, #f6e649, #3a3636);
+    background: linear-gradient(180deg, #eeff00, #2d2a2acf);
 }
 
 .department{
@@ -417,7 +422,8 @@ p {
     align-items: center;
 }
 .alumni{
-    background: #dbdf09;
+   
+    background: linear-gradient(90deg, #ffea00 0%, #ffffff 50%, #ffee00 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -441,7 +447,7 @@ body {
 
 /* Contact Section */
 .contact {
-    background-color: hsl(56, 98%, 55%);
+    background-color: hsl(52, 100%, 50%);
     padding: 50px 0;
     color: #333;
     text-align: center;
@@ -506,19 +512,19 @@ body {
 }
 
 .contact-icons a {
-    color: #1b1a1a;
+    color: #ffffff;
     font-size: 24px;
     margin-right: 15px;
     transition: color 0.3s;
 }
 
 .contact-icons a:hover {
-    color: #574e2d;
+    color: #ffffff;
 }
 
 /* Contact Form */
 .contact-form {
-    background-color:  hsl(56, 98%, 55%);
+    background-color:  hsl(52, 100%, 50%);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgb(22, 22, 22);
@@ -540,12 +546,13 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
-    color: #fbff00;
+    color: #000000;
 }
 
 .contact-form input[type="submit"] {
-    background-color: #f5c400;
-    color: #333;
+    border: #000;
+    background-color: #0c32ee;
+    color: #ffffff;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -555,7 +562,7 @@ body {
 }
 
 .contact-form input[type="submit"]:hover {
-    background-color: #e5b300;
+    background-color: #0062ff;
 }
 
 /* Footer Section */
@@ -638,7 +645,7 @@ body {
 }
 
 .footer-contact p a:hover {
-    color: #ffcc00;
+    color: #cbcb11;
 }
 
 .contact-icons a {
@@ -728,7 +735,7 @@ body {
     border-radius: 50%;
 }
 #cse{
-    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0);
 }
 .icon3 img{
     width: 120px;
@@ -751,32 +758,101 @@ body {
 
 
 .icon4 {
-    background: rgba(0, 60, 255, 0);
-    width: 150px;
-    height: 150px;
+    background: rgb(44, 92, 250);
+    width: 120px;
+    height: 120px;
     margin: 0 auto 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    overflow: hidden; /* Ensures that the image doesn't overflow outside the circle */
+    border: 4px solid white; /* Adds a white border to make it more profile-like */
 }
 
 .icon4 img{
-    width: 160px;
-    height: 120px;
+    width: 100%;
+    height: auto;
+    object-fit:fill; /* Ensures the image covers the area without being distorted */
+    border-radius: 100%;
 }
+
+.icon4:hover {
+    border-color: #ffffff; /* Changes the border color on hover */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Adds a white glow effect on hover */
+}
+
 .icon5 {
-    background: rgba(0, 60, 255, 0);
-    width: 150px;
-    height: 150px;
+    background: rgb(44, 92, 250);
+    width: 130px;
+    height: 130px;
     margin: 0 auto 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    overflow: hidden; /* Ensures that the image doesn't overflow outside the circle */
+    border: 4px solid rgb(255, 255, 255); /* Adds a white border to make it more profile-like */
 }
 
-.icon5 img{
-    width: 160px;
-    height: 120px;
+
+.icon5:hover {
+    border-color: #ffffff; /* Changes the border color on hover */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Adds a white glow effect on hover */
+}
+
+
+.icon5 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the area without being distorted */
+    border-radius: 50%; /* Makes the image circular, matching the container */
+}
+
+#departmentbox {
+    background: linear-gradient(90deg, #e8f196, #ffffff); /* Example gradient from orange to light peach */
+}
+
+
+#departmentbox:hover {
+    transform: translateX(-3px); /* Moves the item up slightly */
+    box-shadow: 0 4px 15px rgb(10, 10, 10); /* Makes the shadow larger on hover */
+}
+
+#mentorbox:hover{
+    transform: translateX(-3px); /* Moves the item up slightly */
+    box-shadow: 0 4px 15px rgb(0, 0, 0); /* Makes the shadow larger on hover */
+}
+
+#mentorbox {
+    background: linear-gradient(90deg, #fefefbc4, #e8e6e3); /* Example gradient from orange to light peach */
+}
+
+
+
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+    background: linear-gradient(90deg , white , rgb(222, 222, 227)) /* Light background color for contrast */
+}
+
+.about-text {
+    max-width: 800px; /* Limit the width of the content */
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: #000000; /* Darker color for better readability */
+    margin-bottom: 20px;
+}
+
+.about p {
+    text-align: justify;
+    font-size: 1.2rem;
+    color: #413e3e; /* Slightly lighter color for text */
+    line-height: 1.6;
 }
