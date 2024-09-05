@@ -329,8 +329,9 @@ p {
 }
 
 .carousel-item {
-
-    min-width: 25%;
+    width: 420px;
+    height:320px;
+    /* min-width: 25%; */
     padding: 20px;
     box-sizing: border-box;
     background-color: #fff;
@@ -853,7 +854,7 @@ body {
 
 .about p {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     text-align: justify;
     font-size: 1rem;
     color: #413e3e; /* Slightly lighter color for text */
