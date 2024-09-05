@@ -832,10 +832,10 @@ body {
 
 
 .about {
-    max-height: 500px;
+    max-height: 700px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     text-align: center;
     padding: 20px 20px;
     background: linear-gradient(90deg , white , rgb(222, 222, 227)) /* Light background color for contrast */
@@ -852,8 +852,10 @@ body {
 }
 
 .about p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
     text-align: justify;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #413e3e; /* Slightly lighter color for text */
     line-height: 1.5;
 }
