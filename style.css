@@ -832,11 +832,12 @@ body {
 
 
 .about {
+    max-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px 10px;
+    padding: 20px 20px;
     background: linear-gradient(90deg , white , rgb(222, 222, 227)) /* Light background color for contrast */
 }
 
@@ -852,7 +853,142 @@ body {
 
 .about p {
     text-align: justify;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #413e3e; /* Slightly lighter color for text */
-    line-height: 1.6;
+    line-height: 1.5;
+}
+
+
+
+/* General Styles for Devices Larger than 1200px */
+@media screen and (min-width: 1200px) {
+    .navbar {
+        padding: 20px;
+    }
+    .hero {
+        flex-direction: row;
+    }
+    .carousel-item {
+        min-width: 20%;
+    }
+    .footer-container {
+        flex-direction: row;
+    }
+    .footer-about, .footer-links, .footer-contact {
+        max-width: 300px;
+    }
+}
+
+/* Styles for Tablets and Smaller Desktops (Min-width 992px and Max-width 1199px) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .navbar {
+        padding: 15px;
+    }
+    .hero {
+        flex-direction: column;
+    }
+    .carousel-item {
+        min-width: 30%;
+    }
+    .footer-container {
+        flex-direction: row;
+    }
+    .footer-about, .footer-links, .footer-contact {
+        max-width: 250px;
+    }
+}
+
+/* Styles for Tablets and Small Screens (Max-width 991px) */
+@media screen and (max-width: 991px) {
+    .navbar-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero-content h1 {
+        font-size: 2em;
+    }
+    .hero-content h2 {
+        font-size: 1.2em;
+    }
+    .carousel-item {
+        min-width: 40%;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-about, .footer-links, .footer-contact {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+/* Styles for Mobile Devices (Max-width 767px) */
+@media screen and (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .navbar-menu {
+        display: none; /* Hide menu items by default on mobile */
+    }
+    .navbar-brand {
+        margin-bottom: 10px;
+    }
+    .navbar-toggle {
+        display: block; /* Show a hamburger menu or toggle button */
+        background-color: #0044cc;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+    .hero-content h1 {
+        font-size: 1.8em;
+    }
+    .hero-content h2 {
+        font-size: 1.1em;
+    }
+    .carousel-item {
+        min-width: 80%;
+    }
+    .contact {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-about, .footer-links, .footer-contact {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+/* Styles for Mobile Devices in Landscape Mode (Max-width 767px and Landscape Orientation) */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    .hero-content h1 {
+        font-size: 2em;
+    }
+    .hero-content h2 {
+        font-size: 1.2em;
+    }
+    .carousel-item {
+        min-width: 70%;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar, .footer {
+        display: none; /* Hide navigation and footer in print */
+    }
+    .contact-form {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .footer-about, .footer-links, .footer-contact {
+        max-width: 100%;
+        text-align: left;
+    }
 }
