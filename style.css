@@ -254,6 +254,7 @@ p {
 }
 
 .icon {
+    background: yellow;
     width: 80px;
     height: 80px;
     margin: 0 auto 20px;
@@ -264,10 +265,29 @@ p {
 }
 
 .icon img {
+    /* width: 150px; */
     max-width: 50%;
-    height: auto;
+    /* height: 200px; */
+}
+.heading{
+    text-align: center;
 }
 
+.icon2 {
+    background: yellow;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.icon2 img{
+    width: 100px;
+    height: 100px;
+}
 .other-service-box p {
     font-size: 1.1em;
     color: #333;
@@ -693,4 +713,70 @@ body {
     margin-top: 20px;
     display: flex;
     justify-content: left;
+}
+
+
+
+.icon3 {
+    background: rgba(0, 0, 0, 0);
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+#cse{
+    background: rgb(0, 0, 0);
+}
+.icon3 img{
+    width: 120px;
+    height: 120px;
+}
+#AI{
+    background: white;
+}
+#AI img{
+    width: 200px;
+    height: 130px;
+}
+#cs img{
+    width: 200px;
+    height: 150px;
+}
+#cs{
+    background: white;
+}
+
+
+.icon4 {
+    background: rgba(0, 60, 255, 0);
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.icon4 img{
+    width: 160px;
+    height: 120px;
+}
+.icon5 {
+    background: rgba(0, 60, 255, 0);
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.icon5 img{
+    width: 160px;
+    height: 120px;
 }
