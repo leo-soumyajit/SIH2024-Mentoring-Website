@@ -743,7 +743,7 @@ body {
     height: 120px;
 }
 #AI{
-    background: white;
+    background: rgba(255, 255, 255, 0);
 }
 #AI img{
     width: 200px;
@@ -754,7 +754,7 @@ body {
     height: 150px;
 }
 #cs{
-    background: white;
+    background: rgba(255, 255, 255, 0);
 }
 
 
