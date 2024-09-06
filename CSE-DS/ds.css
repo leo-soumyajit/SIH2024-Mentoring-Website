@@ -1,0 +1,136 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    margin-bottom: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+h1 {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.login-btn {
+    background-color: #ffc107;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.filter-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.recharge-btn, .filter-btn, .sort-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.search-bar {
+    padding: 20px;
+    width: 350px;
+    border-radius: 50px;
+    border: 1px solid #797676;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(76, 77, 74, 0.766);
+}
+
+.search-bar:focus {
+    outline: none;
+    border-color: #0fcc3b;
+    box-shadow: 0px 0px 8px rgba(40, 167, 70, 0.416);
+}
+
+/* Profile Card Grid */
+.profile-grid {
+    display: grid;
+    justify-content: center; /* Centers the entire grid */
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 35px; /* Gap between cards is 5px */
+    margin: 0 auto;
+    max-width: 1000px; /* Optional: To restrict the maximum width */
+}
+
+/* Profile Card Styling */
+.profile-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(32, 31, 31, 0.687);
+    margin: 5px 0;
+    width: 450px;
+    height: 150px;
+}
+
+.card-left {
+    flex-shrink: 0;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+}
+
+.card-right {
+    flex-grow: 1;
+    margin-left: 15px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    color: red;
+}
+
+.price-free {
+    color: green;
+    font-weight: bold;
+}
+
+.chat-btn {
+    margin: 5px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+}
